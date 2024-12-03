@@ -1,0 +1,54 @@
+.navbar {
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    background-color: #ff6347;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4d4d;
+}
+
+
+/* ESTILOS DEL LOGO  */
+.logo-title {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust logo size */
+    height: auto;
+    margin-right: 15px;
+    /* Space between logo and title */
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    /* Dark color for title */
+}
