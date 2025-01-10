@@ -1,22 +1,41 @@
+import { NavLink } from "react-router-dom";
 import styles from "../styles/navbarStyles.module.css";
+import { useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function Navbar() {
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
     return (
-        <nav className={`${styles["navbar"]}`}>
+        <nav className={styles["navbar"]}>
             <div className={styles["container"]}>
-                <div className={styles["buttons"]}>
-                    <button className={styles["button"]} onClick={() => {
-                        // Implement login functionality here
-                    }}>
-                        Iniciar Sesión
-                    </button>
-                    <button className={styles["button"]} onClick={() => {
-                        // Implement create account functionality here
-                    }}>
-                        Crear Cuenta
-                    </button>
+            <button
+                    className={styles["menu-icon"]}
+                    onClick={toggleMenu}
+                    aria-label="Toggle navigation"
+                >
+                    ☰
+                </button>
+                <div
+                    className={`${styles["nav-elements"]} ${
+                        isMobileMenuOpen ? styles["active"] : ""
+                    }`}
+                >
+                    <ul>
+                        <li><NavLink to="/" className={styles["cart-link"]}>
+                                <FaShoppingCart className={styles["cart-icon"]} />
+                                (1)
+                            </NavLink></li>
+                        <li><NavLink to="/login">Iniciar Sesión</NavLink></li>
+                        <li><NavLink to="/register">Crear Cuenta</NavLink></li>
+                    </ul>
+
                 </div>
             </div>
         </nav>
+
     )
 }
