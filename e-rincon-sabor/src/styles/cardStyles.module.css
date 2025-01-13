@@ -1,8 +1,9 @@
 .card-wrapper {
-    width: 12.5rem;
-    height: 28rem;
+    width: 15rem;
+    height: 26rem;
     background: white;
-    padding: .4em;
+    padding: 0.2em;
+    padding-bottom: 1em;
     border-radius: 6px;
     box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
 
@@ -12,7 +13,7 @@
     display: flex;
     justify-content: center;
     width: auto;
-    height:auto;
+    height: auto;
     margin-bottom: 0.8em;
 }
 
@@ -25,36 +26,33 @@
     border-radius: 6px 6px 0 0;
 }
 
-.image-custom {
-
-}
+.image-custom {}
 
 .content-card {
     display: flex;
     flex-direction: column;
-    align-items: end;
 }
 
 .title-card {
-    margin: 1.2em 0;
+    margin: 1px 0;
     text-transform: uppercase;
     font-size: 18px;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    padding: 0 7px;
+    padding: 2px;
 }
 
 .descrip-card {
-    margin: 0.6 0;
+    margin: 1px 0;
     font-size: 14px;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 550;
     font-style: normal;
     color: #FF6347;
-    padding: 0 7px;
+    padding: 2px;
 
 }
 
@@ -65,9 +63,8 @@
     font-family: "Montserrat", serif;
     font-weight: 900;
     color: #FF6347;
-    /* Un verde para destacar el precio */
     text-align: left;
-    padding: 0 7px;
+    padding: 2px;
 }
 
 .btt-buy-card {
@@ -118,11 +115,79 @@
 
 }
 
+@media (max-width: 1440px) {
+    .card-wrapper {
+        width: 12rem;
+        height: 22rem;
+    }
+
+    .card-image img {
+        width: 7.5rem;
+    }
+
+    .title-card {
+        margin: 1px 0;
+        font-size: 14px;
+        padding: 1.5px;
+    }
+
+    .descrip-card {
+        margin: 1px 0;
+        font-size: 14px;
+        padding: 1px;
+    }
+
+    .price-card {
+        font-size: 16px;
+        padding: 1px;
+    }
+
+    .btt-buy-card button {
+        line-height: 1rem;
+        padding: 0.60rem 1.1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-wrapper {
+        width: 10rem;
+        height: 18rem;
+    }
+
+    .card-image img {
+        width: 5.5rem;
+    }
+
+    .title-card {
+        margin: 0.5px 0;
+        font-size: 12.6px;
+        padding: 1px;
+    }
+
+    .descrip-card {
+        margin: 1px 0;
+        font-size: 12px;
+        padding: 1px;
+    }
+
+    .price-card {
+        font-size: 13.3px;
+        padding: 1px;
+    }
+
+    .btt-buy-card button {
+        line-height: 0.8rem;
+        padding: 0.55rem 1rem;
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
     .card-wrapper {
         display: flex;
         width: 100%;
         height: auto;
+        max-height: 7.6rem;
         border-radius: 1rem;
     }
 
@@ -130,7 +195,7 @@
         width: 6rem;
         object-fit: cover;
         object-position: center;
-
+        border-radius: 1rem;
     }
 
     .content-card {
