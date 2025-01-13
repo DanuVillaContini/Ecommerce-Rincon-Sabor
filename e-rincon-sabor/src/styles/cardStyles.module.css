@@ -1,0 +1,171 @@
+.card-wrapper {
+    width: 12.5rem;
+    height: 28rem;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height:auto;
+    margin-bottom: 0.8em;
+}
+
+.card-image:hover {
+    transform: scale(0.98);
+}
+
+.card-image img {
+    width: 10rem;
+    border-radius: 6px 6px 0 0;
+}
+
+.image-custom {
+
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.title-card {
+    margin: 1.2em 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0 7px;
+}
+
+.descrip-card {
+    margin: 0.6 0;
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    color: #FF6347;
+    padding: 0 7px;
+
+}
+
+.price-card {
+    display: block;
+    margin: 0.5em 0;
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+    color: #FF6347;
+    /* Un verde para destacar el precio */
+    text-align: left;
+    padding: 0 7px;
+}
+
+.btt-buy-card {
+    display: flex;
+    margin: 0.1em 0;
+    padding: 0.2em;
+}
+
+.btt-buy-card button {
+    background-color: #98FF98;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 0.5rem;
+    color: #111827;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.25rem;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+.btt-buy-card button:hover {
+    background-color: #BAFFBA;
+}
+
+.btt-buy-card button:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+    outline-offset: 2px;
+}
+
+.btt-buy-card button:focus-visible {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.icon-custom {
+    display: none;
+
+}
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .card-image img {
+        width: 6rem;
+        object-fit: cover;
+        object-position: center;
+
+    }
+
+    .content-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-card {
+        margin: 0.8em 0;
+        font-size: 16px;
+        padding: 0 4px;
+    }
+
+    .descrip-card {
+        margin: 0.2 0;
+        font-size: 12px;
+        padding: 0 4px;
+    }
+
+    .bbt-custom {
+        display: none;
+    }
+
+    .btt-buy-card {
+        display: flex;
+        justify-content: end;
+        margin: 0 0.2em;
+        padding: 0.2em;
+    }
+
+    .icon-custom {
+        display: flex;
+    }
+
+    .icon-custom img {
+        width: 1.2rem;
+    }
+}
