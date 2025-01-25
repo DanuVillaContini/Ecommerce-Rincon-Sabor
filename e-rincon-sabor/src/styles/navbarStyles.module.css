@@ -43,7 +43,7 @@
 }
 
 .nav-elements ul a {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
@@ -74,29 +74,16 @@
 .cart-link {
     display: flex;
     align-items: center;
-    padding: 0.5em 1em;
-    background-color: none;
-    border-radius: 15px;
-    color: #000000;
-    font-weight: 500;
     text-decoration: none;
-    border: 2px solid #FF6347;
-    box-shadow: -1px -1px 8px #FFCBC2, 1px 1px 8px #FF6347, inset 1px 1px 4px #FF6347,
-        inset -1px -1px 4px #FFCBC2;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .cart-link:hover {
-    box-shadow: -5px -5px 8px #FF6347, 5px 5px 8px #FFCBC2, inset 5px 5px 4px #FFCBC2,
-        inset -5px -5px 4px #FF6347;
-    background-color: #FF6347;
     color: #000000;
     transition: 500ms;
 }
 
 .cart-icon {
-    margin-right: 0.5em;
-    font-size: 16px;
+    padding: 0.3em;
 }
 
 .close-icon {

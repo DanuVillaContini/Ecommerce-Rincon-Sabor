@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styles from "../styles/navbarStyles.module.css";
 import { useEffect, useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function Navbar() {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -40,8 +41,9 @@ export default function Navbar() {
                     {/* Links del menú */}
                     <ul>
                         <li>
-                            <NavLink to="/" onClick={() => setMobileMenuOpen(false)}>
-                                Inicio
+                            <NavLink to="/" className={styles["cart-link"]}>
+                                <FaShoppingCart className={styles["cart-icon"]} />
+                                (1)
                             </NavLink>
                         </li>
                         <li>
