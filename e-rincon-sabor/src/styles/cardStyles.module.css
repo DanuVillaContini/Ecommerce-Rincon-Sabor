@@ -7,6 +7,7 @@
     border-radius: 6px;
     box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
 
+
 }
 
 .card-image {
@@ -31,6 +32,7 @@
 .content-card {
     display: flex;
     flex-direction: column;
+    padding-left: 0.5em;
 }
 
 .title-card {
