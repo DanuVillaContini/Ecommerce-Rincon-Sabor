@@ -32,7 +32,7 @@ function Footer() {
                         <div className={styles["footer-columns"]}>
                             <ul >
                                 <li><NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>Inicio</NavLink></li>
-                                <li><NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>Como comprar</NavLink></li>
+                                <li><NavLink to="/como-comprar" className={({ isActive }) => isActive ? "active-link" : ""}>Como comprar</NavLink></li>
                             </ul>
                         </div>
                         <div className={styles["footer-columns"]}>
