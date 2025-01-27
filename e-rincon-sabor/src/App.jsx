@@ -3,6 +3,7 @@ import HomeScreen from './screen/HomeScreen'
 import AuthRouter from './routes/AuthRouter'
 import LoginScreen from './screen/LoginScreen'
 import RegisterScreen from './screen/RegisterScreen'
+import CategoriasScreen from "./screen/CategoriasScreen";
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
           <Route path="/auth/*" element={<AuthRouter/>} />
           <Route path="/login" element={<LoginScreen/>} />
           <Route path="/register" element={<RegisterScreen/>} />
-
+          <Route path="/categorias" element={<CategoriasScreen/>} />
         </Routes>
       </BrowserRouter>
     </>

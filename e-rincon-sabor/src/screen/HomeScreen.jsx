@@ -61,10 +61,10 @@ export default function HomeScreen() {
                         <span className={styles["title-section"]}>TODAS LAS CATEGORIAS</span>
                     </div>
                     <div className={styles["grid2"]}>
-                        <CustomButtonCategorias image={imgCategoria} title="DESAYUNOS/MERIENDAS" />
-                        <CustomButtonCategorias image={imgCategoria2} title="PASTELERIA" />
-                        <CustomButtonCategorias image={imgCategoria3} title="BEBIDAS" />
-                        <CustomButtonCategorias image={imgCategoria4} title="SANDWICHES" />
+                        <CustomButtonCategorias image={imgCategoria} titleCategoria="DESAYUNOS/MERIENDAS" to="/categorias" />
+                        <CustomButtonCategorias image={imgCategoria2} titleCategoria="PASTELERIA" to="/categorias"/>
+                        <CustomButtonCategorias image={imgCategoria3} titleCategoria="BEBIDAS" to="/categorias"/>
+                        <CustomButtonCategorias image={imgCategoria4} titleCategoria="SANDWICHES" to="/categorias"/>
                     </div>
                 </div>
             </div>

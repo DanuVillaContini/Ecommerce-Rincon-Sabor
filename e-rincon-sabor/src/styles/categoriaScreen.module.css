@@ -1,0 +1,127 @@
+/* ESTILOS DEL MENU */
+.menu-container {
+    position: relative;
+    margin-top: 1em;
+}
+.menu-container::before,
+.menu-container::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 85%;
+    background-color: #FF6347;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu-container::before {
+    top: 0;
+}
+.menu-container::after {
+    bottom: 0;
+    width: 55%;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    padding: 1em;
+}
+.menu-item {
+    margin: 0 15px;
+    position: relative;
+}
+.menu-item, .menu-item a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.menu-item:hover .submenu {
+    display: block;
+}
+
+/* -----SECTION CARDS PRODUCTOS GRID ---- */
+.section-custom {
+    background-color: #FF9784;
+    width: 100%;
+    height: auto;
+    min-height: 50vw;
+    padding-top: 0.6em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.322);
+    border-top: 1px solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content {
+    background-color: transparent;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: auto;
+}
+
+
+/* -----RESPONSIVE--- */
+@media (max-width: 1440px) {
+/* -----SECTION CARDS PRODUCTOS GRID ---- */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+/* -----SECTION CARDS PRODUCTOS GRID ---- */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Estilos para móviles */
+@media (max-width: 768px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin-bottom: 1em;
+    }
+
+    .menu-item:hover .submenu,
+    .menu-item:focus-within .submenu {
+        display: block;
+    }
+
+/* -----SECTION CARDS PRODUCTOS GRID ---- */
+    .section-custom {
+        height: auto;
+    }
+
+    .container-content {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+

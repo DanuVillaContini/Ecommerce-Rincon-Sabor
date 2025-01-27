@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "../styles/navbarStyles.module.css";
 
 //fontMedium
@@ -7,17 +8,18 @@ function SecondNavbar() {
             {/* Menú */}
             <nav className={styles["menu-container"]}>
                 <ul className={styles["menu"]}>
-                    <li className={styles["menu-item"]}><a href="#" >Inicio</a></li>
+                    <NavLink to="/" className={styles["menu-item"]}>Inicio</NavLink>
                     <li className={styles["menu-item"]}>
                         <a href="#">Productos ▼</a>
                         <ul className={styles["submenu"]}>
-                            <li><a href="#">Café</a></li>
-                            <li><a href="#">Tés</a></li>
-                            <li><a href="#">Accesorios</a></li>
+                            <li><NavLink to="/categorias" className={styles["title"]}>Desayunos y meriendas</NavLink></li>
+                            <li><NavLink to="/categorias" className={styles["title"]}>Pasteleria</NavLink></li>
+                            <li><NavLink to="/categorias" className={styles["title"]}>Bebidas</NavLink></li>
+                            <li><NavLink to="/categorias" className={styles["title"]}>Sandwiches</NavLink></li>
                         </ul>
                     </li>
-                    <li className={styles["menu-item"]}><a href="#">Como comprar</a></li>
-                    <li className={styles["menu-item"]}><a href="#">Contacto</a></li>
+                    <NavLink to="/" className={styles["menu-item"]}>Como comprar</NavLink>
+                    <NavLink to="/" className={styles["menu-item"]}>Contacto</NavLink>
                 </ul>
             </nav>
         </div>

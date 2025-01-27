@@ -77,8 +77,8 @@
 
 .btt-buy-card button {
     background-color: #98FF98;
-    border: 1px solid rgb(209, 213, 219);
-    border-radius: 0.5rem;
+
+
     color: #111827;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
@@ -87,8 +87,10 @@
     line-height: 1.25rem;
     padding: 0.75rem 1rem;
     text-align: center;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9e7e7;
+    border-radius: 16px;
+    box-shadow: 5px 5px 8px #acc7ac,
+        0px 0px 0px #ffffff1f;
     cursor: pointer;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -190,14 +192,14 @@
         width: 100%;
         height: auto;
         max-height: 7.6rem;
-        border-radius: 1rem;
+        border-radius: 0.6rem;
     }
 
     .card-image img {
         width: 6rem;
         object-fit: cover;
         object-position: center;
-        border-radius: 1rem;
+        border-radius: 0.6rem;
     }
 
     .content-card {
@@ -234,5 +236,32 @@
 
     .icon-custom img {
         width: 1.2rem;
+    }
+}
+
+@media (max-width: 530px) {
+
+
+    .title-card {
+        margin: 0.2em 0;
+        font-size: 14px;
+        padding: 0 1px;
+    }
+
+    .descrip-card {
+        margin: 0.2 0;
+        font-size: 12px;
+        padding: 0 1px;
+    }
+
+    .bbt-custom {
+        display: none;
+    }
+
+    .btt-buy-card {
+        display: flex;
+        justify-content: end;
+        margin: 0 0.1em;
+        padding: 0.1em;
     }
 }

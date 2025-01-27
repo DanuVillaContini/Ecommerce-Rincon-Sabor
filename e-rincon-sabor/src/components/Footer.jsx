@@ -31,8 +31,8 @@ function Footer() {
                     <div className={styles["wrapper-links-nav"]}>
                         <div className={styles["footer-columns"]}>
                             <ul >
-                                <li><NavLink to="/inicio" className={({ isActive }) => isActive ? "active-link" : ""}>Inicio</NavLink></li>
-                                <li><NavLink to="/register" className={({ isActive }) => isActive ? "active-link" : ""}>Como comprar</NavLink></li>
+                                <li><NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>Inicio</NavLink></li>
+                                <li><NavLink to="/" className={({ isActive }) => isActive ? "active-link" : ""}>Como comprar</NavLink></li>
                             </ul>
                         </div>
                         <div className={styles["footer-columns"]}>
@@ -44,8 +44,8 @@ function Footer() {
                         <div className={styles["footer-columns"]}>
                             <h3>Sociales</h3>
                             <ul>
-                                <li><NavLink to="/facebook" className={({ isActive }) => isActive ? "active-link" : ""}>Facebook</NavLink></li>
-                                <li><NavLink to="/instagram" className={({ isActive }) => isActive ? "active-link" : ""}>Instagram</NavLink></li>
+                                <li><NavLink to="https://www.facebook.com/" className={({ isActive }) => isActive ? "active-link" : ""}>Facebook</NavLink></li>
+                                <li><NavLink to="https://www.instagram.com/" className={({ isActive }) => isActive ? "active-link" : ""}>Instagram</NavLink></li>
                             </ul>
                         </div>
                     </div>

@@ -159,6 +159,7 @@
     }
 }
 
+
 /* ESTILOS DEL LOGO  */
 .logo-title {
     display: flex;
@@ -226,7 +227,7 @@
     position: relative;
 }
 
-.menu-item a {
+.menu-item, .menu-item a{
     text-decoration: none;
     color: #333;
     font-size: 18px;
@@ -239,7 +240,6 @@
 .menu-item:hover .submenu {
     display: block;
 }
-
 .submenu {
     display: none;
     position: absolute;
