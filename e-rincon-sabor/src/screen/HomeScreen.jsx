@@ -1,14 +1,10 @@
-// import styles from '../styles/bttCategorias.module.css';
 import styles from '../styles/homeStyles.module.css';
-
-
 
 import LogoTitle from "../components/LogoTitle";
 import Navbar from "../components/Navbar";
 import SecondNavbar from "../components/SecondNavbar";
 import MainCorousel from "../components/MainCorousel";
 import CustomCards from '../components/CustomCards';
-// import CustomSection from '../components/CustomSection';
 import img from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg'
 import img3 from '../assets/img3.jpg'
@@ -20,11 +16,7 @@ import imgCategoria2 from '../assets/categoria2.jpg'
 import imgCategoria3 from '../assets/categoria3.jpg'
 import imgCategoria4 from '../assets/categoria4.jpg'
 
-
-
-// import img2 from '../assets/changuche.jpg';
-
-
+import Footer from '../components/Footer';
 
 export default function HomeScreen() {
     return (
@@ -78,7 +70,6 @@ export default function HomeScreen() {
             </div>
 
             {/* 4-  COMO COMPRAR -  FORM QUEJAS SECTION */}
-
             <div className={styles["section-custom"]}>
                 <div className={styles["container-content3"]}>
                     <div className={styles["text-section"]}>
@@ -118,51 +109,10 @@ export default function HomeScreen() {
                     </div>
 
                 </div>
-
-
-
-                {/* <div className={styles["container-content3"]}>
-                    <div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
-                        <h2>¿Como comprar?</h2>
-                        <span>There are many variations of passages of Lorem Ipsum available, but the majority
-                            have suffered alteration in some form, by injected humour, or randomised
-                            words which don't look even slightly believable. If you are going to
-                            use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                            embarrassing hidden in the middle of text. All the Lorem Ipsum
-                            generators on the Internet tend to repeat predefined chunks as necessary,
-                            making this the first true generator on the Internet. I
-                            t uses a dictionary of over 200 Latin words, combined with a handful
-                            of model sentence structures, to generate Lorem Ipsum which looks
-                            reasonable. The generated Lorem Ipsum is
-                            therefore always free from repetition, injected humour,
-                            or non-characteristic words etc.</span>
-                    </div>
-                    <div>
-                        <div>
-                            <h2>Arrepentimiento de compra</h2>
-                        </div>
-                        <div>
-                            <span>Puedes comunicarte directamente con nuestra linea telofonica o bien
-                                llenar el siguiente formulario. Nos pondremos en contacto en la brevedad.
-                            </span>
-                        </div>
-                        <div>
-
-                        </div>
-
-
-                    </div>
-                </div> */}
             </div>
 
             {/* 5- f FOOTER SECTION */}
-
+            <Footer/>
         </>
     )
 }
