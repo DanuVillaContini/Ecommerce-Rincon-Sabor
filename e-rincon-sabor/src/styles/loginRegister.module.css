@@ -7,6 +7,15 @@
     align-items: center;
 }
 
+.register-container {
+    width: 100vw;
+    height: 100vh;
+    background: url('C:\Users\User\Desktop\Ecommerce\e-rincon-sabor\src\assets\bgRegister.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login-box {
     background: #ddffdd79;
     backdrop-filter: blur(10px);
@@ -17,7 +26,27 @@
     width: 350px;
 }
 
+.register-box {
+    background: #FFCBC279;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
 .login-box h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+    font-family: "Londrina Solid", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+}
+
+.register-box h2 {
     margin-bottom: 20px;
     font-size: 30px;
     color: #333;
@@ -79,4 +108,58 @@ button:hover {
     font-weight: 500;
     font-style: normal;
 
+}
+
+.btt-register {
+    width: 100%;
+    padding: 12px;
+    background: #98FF98;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid #e9e7e7;
+    border-radius: 16px;
+    box-shadow: 5px 5px 8px #acc7ac,
+        0px 0px 0px #ffffff1f;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btt-register:hover {
+    background-color: #FFCBC2;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: auto;
+}
+
+.wrapper-icon {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0.6em;
+}
+.wrapper-logo {
+    display: flex;
+    padding: 0.6em;
+}
+.logo {
+    width: 4em;
+}
+.icon {
+    width: 2em;
 }
