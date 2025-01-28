@@ -18,8 +18,8 @@ function SecondNavbar() {
                             <li><NavLink to="/categorias" className={styles["title"]}>Sandwiches</NavLink></li>
                         </ul>
                     </li>
-                    <NavLink to="/" className={styles["menu-item"]}>Como comprar</NavLink>
-                    <NavLink to="/" className={styles["menu-item"]}>Contacto</NavLink>
+                    <NavLink to="/como-comprar" className={styles["menu-item"]}>Como comprar</NavLink>
+                    <NavLink to="/como-comprar" className={styles["menu-item"]}>Contacto</NavLink>
                 </ul>
             </nav>
         </div>
