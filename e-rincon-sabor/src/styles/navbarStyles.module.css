@@ -16,13 +16,23 @@
 }
 
 
-.menu-icon {
+.open-menu-hamb {
     display: none;
     font-size: 24px;
     background: none;
-    border: none;
+    border: none ;
     color: #ffffff;
     cursor: pointer;
+    box-shadow: none;
+    border-radius: none;
+}
+.open-menu-hamb:hover {
+    font-size: 28px;
+    background: none;
+    border: none ;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: none;
 }
 
 .nav-elements {
@@ -86,13 +96,13 @@
     padding: 0.3em;
 }
 
-.close-icon {
+.close-menu-hamb {
     display: none; 
 }
 
 /* Ajustes para móviles */
 @media (max-width: 768px) {
-    .menu-icon {
+    .open-menu-hamb {
         display: block;
     }
 
@@ -145,17 +155,30 @@
         color: #FFD700;
     }
 
-    .close-icon {
+    .close-menu-hamb {
         display: block;
         position: absolute;
         top: 2rem;
-        left: 14rem;
+        left: 12rem;
         font-size: 4em;
         background: none;
         border: none;
         color: white;
         cursor: pointer;
         z-index: 10000;
+        background: none;
+        border: none ;
+        cursor: pointer;
+        box-shadow: none;
+        border-radius: none;
+    }
+    .close-menu-hamb:hover{
+        font-size: 4.5em;
+        background: none;
+        border: none ;
+        cursor: pointer;
+        box-shadow: none;
+        border-radius: none;
     }
 }
 

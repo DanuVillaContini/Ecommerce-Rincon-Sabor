@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className={styles["container"]}>
                 {/* Ícono del menú hamburguesa */}
                 <button
-                    className={styles["menu-icon"]}
+                    className={styles["open-menu-hamb"]}
                     onClick={toggleMenu}
                     aria-label="Toggle navigation"
                 >
@@ -32,7 +32,7 @@ export default function Navbar() {
 
                 {/* Contenedor del menú */}
                 <div className={`${styles["nav-elements"]} ${isMobileMenuOpen ? styles["active"] : ""}`}>
-                    <button className={styles["close-icon"]}
+                    <button className={styles["close-menu-hamb"]}
                         onClick={toggleMenu}
                         aria-label="Close navigation">
                         &times;
